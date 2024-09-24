@@ -10,8 +10,8 @@ import { Country } from '../../interfaces/country.interface';
 export class ByCapitalPageComponent {
   public countries: Country[] = [];
   constructor(private readonly countriesService: CountriesService) {}
-  searchByCapital(term: string): void {
-    this.countriesService.searchCapital(term).subscribe((countries) => {
+  searchByCapital(capital: string): void {
+    this.countriesService.searchCapital(capital).subscribe((countries) => {
       this.countries = countries;
     });
   }

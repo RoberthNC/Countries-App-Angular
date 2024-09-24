@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { ByCapitalPageComponent } from './pages/by-capital-page/by-capital-page.component';
 import { ByCountryPageComponent } from './pages/by-country-page/by-country-page.component';
@@ -18,6 +19,6 @@ import { SharedModule } from '../shared/shared.module';
     CountryPageComponent,
     CountryTableComponent,
   ],
-  imports: [CommonModule, CountriesRoutingModule, SharedModule],
+  imports: [CommonModule, CountriesRoutingModule, RouterModule, SharedModule],
 })
 export class CountriesModule {}
